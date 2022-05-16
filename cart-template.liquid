@@ -3,12 +3,12 @@
 
 <!-- HERE item.key is different for different products added in CART. So, added "plus"/"minus" to differentiate between "+" and "-" button. and add id in ONCLICK-->
                  
-                    <span id="plusupdates_{{ item.key }}" style="font-size: 23px; cursor: pointer; margin-left: 25px;"  onclick="plusquantity(this.id)" >+</span>
+                                    <span id="minusupdates_{{ item.key }}" style="font-size: 23px; cursor: pointer; margin-left: 25px;" onclick="minusquantity(this.id)">-</span>
                 
   <input class="cart__qty-input" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" pattern="[0-9]*">
   
   
-                <span id="minusupdates_{{ item.key }}" style="font-size: 23px; cursor: pointer;" onclick="minusquantity(this.id)">-</span>
+               <span id="plusupdates_{{ item.key }}" style="font-size: 23px; cursor: pointer; "  onclick="plusquantity(this.id)" >+</span>
                 </div>
 
 <script>
